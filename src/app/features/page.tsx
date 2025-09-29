@@ -2,17 +2,14 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-import { featChat, featDiscover, featSearch, featShare, featSuggest } from '../assets/images';
-
+import { featChat, featDiscover, featSearch, featShare, featSuggest } from '../../assets/images';
 
 // Custom Skeleton component to replace Antd Skeleton
 const SkeletonImage = ({ className }: { className?: string }) => (
   <div className={`bg-gray-200 animate-pulse rounded-2xl ${className}`}></div>
 );
 
-
-export default function Home() {
-
+export default function FeaturesPage() {
   const [imageLoading, setImageLoading] = useState({
     feat1: true,
     feat2: true,
@@ -22,6 +19,11 @@ export default function Home() {
   });
 
   const handleImageLoad = (imageKey: keyof typeof imageLoading) => {
+    setImageLoading(prev => ({ ...prev, [imageKey]: false }));
+  };
+
+  const handleImageError = (imageKey: keyof typeof imageLoading) => {
+    console.log(`Image failed to load: ${imageKey}`);
     setImageLoading(prev => ({ ...prev, [imageKey]: false }));
   };
 
@@ -43,7 +45,7 @@ export default function Home() {
             </div>
             <div className="flex-1 flex justify-center lg:justify-end w-full">
               {imageLoading.feat1 ? (
-                <SkeletonImage
+                <SkeletonImage 
                   className="!w-full !h-64 sm:!w-full sm:!h-80 md:!w-full md:!h-96 lg:!w-full lg:!h-[400px] max-w-md sm:max-w-lg lg:max-w-2xl"
                 />
               ) : null}
@@ -54,6 +56,7 @@ export default function Home() {
                 height={400}
                 className={`w-full max-w-md sm:max-w-lg lg:max-w-2xl h-auto rounded-2xl ${imageLoading.feat1 ? 'hidden' : 'block'}`}
                 onLoad={() => handleImageLoad('feat1')}
+                onError={() => handleImageError('feat1')}
               />
             </div>
           </div>
@@ -76,7 +79,7 @@ export default function Home() {
             </div>
             <div className="flex-1 flex justify-center lg:justify-end w-full">
               {imageLoading.feat2 ? (
-                <SkeletonImage
+                <SkeletonImage 
                   className="!w-full !h-64 sm:!w-full sm:!h-80 md:!w-full md:!h-96 lg:!w-full lg:!h-[400px] max-w-md sm:max-w-lg lg:max-w-2xl"
                 />
               ) : null}
@@ -87,6 +90,7 @@ export default function Home() {
                 height={400}
                 className={`w-full max-w-md sm:max-w-lg lg:max-w-2xl h-auto rounded-2xl ${imageLoading.feat2 ? 'hidden' : 'block'}`}
                 onLoad={() => handleImageLoad('feat2')}
+                onError={() => handleImageError('feat2')}
               />
             </div>
           </div>
@@ -99,7 +103,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 flex justify-center lg:justify-start order-2 lg:order-1 w-full">
               {imageLoading.feat3 ? (
-                <SkeletonImage
+                <SkeletonImage 
                   className="!w-full !h-64 sm:!w-full sm:!h-80 md:!w-full md:!h-96 lg:!w-full lg:!h-[400px] max-w-md sm:max-w-lg lg:max-w-2xl"
                 />
               ) : null}
@@ -110,6 +114,7 @@ export default function Home() {
                 height={400}
                 className={`w-full max-w-md sm:max-w-lg lg:max-w-2xl h-auto rounded-2xl ${imageLoading.feat3 ? 'hidden' : 'block'}`}
                 onLoad={() => handleImageLoad('feat3')}
+                onError={() => handleImageError('feat3')}
               />
             </div>
             <div className="flex-1 order-1 lg:order-2">
@@ -145,7 +150,7 @@ export default function Home() {
             </div>
             <div className="flex-1 flex justify-center lg:justify-end w-full">
               {imageLoading.feat4 ? (
-                <SkeletonImage
+                <SkeletonImage 
                   className="!w-full !h-64 sm:!w-full sm:!h-80 md:!w-full md:!h-96 lg:!w-full lg:!h-[400px] max-w-md sm:max-w-lg lg:max-w-2xl"
                 />
               ) : null}
@@ -156,6 +161,7 @@ export default function Home() {
                 height={400}
                 className={`w-full max-w-md sm:max-w-lg lg:max-w-2xl h-auto rounded-2xl ${imageLoading.feat4 ? 'hidden' : 'block'}`}
                 onLoad={() => handleImageLoad('feat4')}
+                onError={() => handleImageError('feat4')}
               />
             </div>
           </div>
@@ -168,7 +174,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 flex justify-center lg:justify-start order-2 lg:order-1 w-full">
               {imageLoading.feat5 ? (
-                <SkeletonImage
+                <SkeletonImage 
                   className="!w-full !h-64 sm:!w-full sm:!h-80 md:!w-full md:!h-96 lg:!w-full lg:!h-[400px] max-w-md sm:max-w-lg lg:max-w-2xl"
                 />
               ) : null}
@@ -179,6 +185,7 @@ export default function Home() {
                 height={400}
                 className={`w-full max-w-md sm:max-w-lg lg:max-w-2xl h-auto rounded-2xl ${imageLoading.feat5 ? 'hidden' : 'block'}`}
                 onLoad={() => handleImageLoad('feat5')}
+                onError={() => handleImageError('feat5')}
               />
             </div>
             <div className="flex-1 order-1 lg:order-2">

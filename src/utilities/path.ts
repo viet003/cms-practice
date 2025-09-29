@@ -1,0 +1,19 @@
+export const path = {
+    HOME: "/",
+    LOGIN: "/login",
+    FORGOTPASS: "/forgot-password",
+    RESETPASS: "/reset-password",
+    LANDING: "/",
+    SIGNUP: "/signup",
+    FEATURES: "/features",
+    PRIVACY: "/privacy",
+    DESKTOP_APP: "/desktop-app",
+    DEVELOPER: "/developer",
+    HELP: "/help",
+    USER: "/user/:userId",
+    FRIENDS: "friends",
+    GROUPS: "groups",
+    WATCH: "watch",
+    EXPLORE: "explore",
+    STAR: "*"
+}
