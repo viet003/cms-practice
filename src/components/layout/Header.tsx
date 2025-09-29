@@ -6,12 +6,17 @@ import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import { logo } from '../../assets/images';
 import { path } from '../../utilities/path';
+import { getDirectusAssetURL } from '../../lib/directus/directus-utils';
+import { DirectusFile } from '../../types/directus-schema';
 
 interface HeaderProps {
   isScrolled?: boolean;
+  logo?: DirectusFile | string | null;
+  subLogo?: DirectusFile | string | null;
+  siteTitle?: string | null;
 }
 
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC<HeaderProps> = ({ logo: headerLogo, subLogo, siteTitle }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,8 +66,8 @@ const Header: React.FC<HeaderProps> = () => {
             <div className="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] rounded-full flex items-center justify-center overflow-hidden">
               <Link href={path.LANDING}>
                 <Image
-                  src={logo}
-                  alt="CMS Logo"
+                  src={headerLogo ? getDirectusAssetURL(headerLogo) : logo}
+                  alt={siteTitle || "Travel Social Logo"}
                   width={90}
                   height={90}
                   className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity duration-200"
@@ -74,8 +79,8 @@ const Header: React.FC<HeaderProps> = () => {
             {[
               { text: "Tính năng ▼", to: "/features" },
               { text: "Quyền riêng tư và an toàn", to: "/privacy" },
-              { text: "Ứng dụng dành cho máy tính", to: path.DESKTOP_APP },
-              { text: "Dành cho nhà phát triển", to: path.LOGIN },
+              { text: "Ứng dụng di động", to: path.DESKTOP_APP },
+              { text: "Trở thành đối tác", to: path.LOGIN },
               { text: "Trung tâm trợ giúp", to: path.HELP },
             ].map((item, index) => (
               <Link
@@ -119,8 +124,8 @@ const Header: React.FC<HeaderProps> = () => {
               <div className="w-14 h-14 rounded-full flex items-center justify-center overflow-hidden">
                 <Link href={path.LANDING}>
                   <Image
-                    src={logo}
-                    alt="CMS Logo"
+                    src={headerLogo ? getDirectusAssetURL(headerLogo) : logo}
+                    alt={siteTitle || "Travel Social Logo"}
                     width={56}
                     height={56}
                     className="w-full h-full object-cover cursor-pointer hover:opacity-80 transition-opacity duration-200"
@@ -128,8 +133,8 @@ const Header: React.FC<HeaderProps> = () => {
                 </Link>
               </div>
               <div>
-                <h2 className="text-base sm:text-lg font-bold text-gray-900">CMS Practice</h2>
-                <p className="text-xs text-gray-500">Content Management</p>
+                <h2 className="text-base sm:text-lg font-bold text-gray-900">{siteTitle || "Travel Social"}</h2>
+                <p className="text-xs text-gray-500">Travel Community</p>
               </div>
             </div>
             <button
@@ -154,13 +159,13 @@ const Header: React.FC<HeaderProps> = () => {
                 <span className="flex-1 text-sm sm:text-base font-medium cursor-pointer transition-all duration-200 
                 hover:underline decoration-2 
                 decoration-blue-600 
-                hover:underline-offset-4">Tính năng</span>
+                hover:underline-offset-4">Tính năng du lịch</span>
                 <Icon icon="fluent:chevron-right-24-regular" className="w-5 h-5 transition-colors duration-200 text-gray-400 group-hover:text-blue-600" />
               </Link>
               {[
                 { text: "Quyền riêng tư và an toàn", icon: "fluent:shield-24-regular", to: "/privacy" },
-                { text: "Ứng dụng dành cho máy tính", icon: "fluent:desktop-24-regular", to: path.DESKTOP_APP },
-                { text: "Dành cho nhà phát triển", icon: "fluent:code-24-regular", to: null },
+                { text: "Ứng dụng di động", icon: "fluent:phone-24-regular", to: path.DESKTOP_APP },
+                { text: "Trở thành đối tác", icon: "fluent:handshake-24-regular", to: null },
                 { text: "Trung tâm trợ giúp", icon: "fluent:question-circle-24-regular", to: path.HELP },
               ].map((item, i) => (
                 <Link
@@ -181,7 +186,7 @@ const Header: React.FC<HeaderProps> = () => {
           {/* Footer Info */}
           <div className="px-6 py-4 border-t border-gray-100 mt-auto">
             <div className="text-center">
-              <p className="text-xs text-gray-400 mb-2">© CMS Practice 2025</p>
+              <p className="text-xs text-gray-400 mb-2">© Travel Social 2025</p>
               <div className="flex justify-center space-x-4 text-xs">
                 {[
                   { text: "Chính sách", to: path.PRIVACY },

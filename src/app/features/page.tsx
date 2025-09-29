@@ -1,9 +1,12 @@
 import FeaturesClient from './FeaturesClient';
+import { fetchSections } from '../../lib/directus/fetchers';
 
-export default function FeaturesPage() {
+export default async function FeaturesPage() {
+  const sections = await fetchSections('features');
+
   return (
     <div>
-      <FeaturesClient />
+      <FeaturesClient sections={sections} />
     </div>
   );
 }

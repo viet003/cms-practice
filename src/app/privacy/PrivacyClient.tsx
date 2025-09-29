@@ -37,9 +37,9 @@ export default function PrivacyClient() {
       <section className="py-8 sm:py-12 lg:py-20 px-4 text-center bg-blue-50">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[70px] font-bold text-gray-900 mb-4 sm:mb-6 text-left lg:text-center">
-            <span className="text-blue-600">An toàn </span> quản lý
+            <span className="text-blue-600">An toàn </span> chia sẻ
             <br />
-            nội dung của bạn
+            hành trình của bạn
           </h1>
           <div className="mb-12 w-full">
             <div className="relative w-full">
@@ -48,7 +48,7 @@ export default function PrivacyClient() {
               )}
               <Image
                 src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Team working on content management"
+                alt="Travelers sharing experiences safely"
                 width={1170}
                 height={400}
                 className={`w-full h-80 object-cover rounded-2xl mx-auto shadow-lg transition-opacity duration-300 ${
@@ -61,8 +61,8 @@ export default function PrivacyClient() {
             </div>
           </div>
           <p className="text-md text-gray-600 mb-8 max-w-2xl mx-auto">
-            Quản lý và bảo vệ nội dung của bạn một cách an toàn và bảo mật với
-            hệ thống CMS hiện đại và đội ngũ chuyên nghiệp
+            Chia sẻ những trải nghiệm du lịch của bạn một cách an toàn và bảo mật với
+            cộng đồng du lịch toàn cầu và hệ thống bảo vệ thông tin cá nhân
           </p>
         </div>
       </section>
@@ -72,23 +72,23 @@ export default function PrivacyClient() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
           <div className="text-center p-6">
             <Icon icon="fluent:shield-24-regular" className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-            <h3 className="font-semibold text-gray-900 mb-2">Bảo mật tuyệt đối</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Bảo mật thông tin cá nhân</h3>
             <p className="text-gray-600 text-sm">
-              Dữ liệu và nội dung được bảo vệ bằng công nghệ mã hóa tiên tiến
+              Thông tin cá nhân và vị trí được bảo vệ bằng công nghệ mã hóa tiên tiến
             </p>
           </div>
           <div className="text-center p-6">
             <Icon icon="fluent:people-24-regular" className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-            <h3 className="font-semibold text-gray-900 mb-2">Quản lý nhóm</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Kết nối an toàn</h3>
             <p className="text-gray-600 text-sm">
-              Cộng tác an toàn với đội ngũ và kiểm soát quyền truy cập
+              Kết nối với bạn bè và cộng đồng du lịch một cách an toàn
             </p>
           </div>
           <div className="text-center p-6">
             <Icon icon="fluent:document-24-regular" className="w-12 h-12 text-blue-600 mx-auto mb-4" />
-            <h3 className="font-semibold text-gray-900 mb-2">Quản lý nội dung</h3>
+            <h3 className="font-semibold text-gray-900 mb-2">Chia sẻ trải nghiệm</h3>
             <p className="text-gray-600 text-sm">
-              Tạo, chỉnh sửa và xuất bản nội dung một cách an toàn
+              Chia sẻ ảnh, video và câu chuyện du lịch một cách an toàn
             </p>
           </div>
         </div>
@@ -98,21 +98,21 @@ export default function PrivacyClient() {
       <section className="py-8 sm:py-12 lg:py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">
-            Bảo vệ hệ thống quản lý
+            Bảo vệ cộng đồng du lịch
             <br />
-            nội dung của chúng tôi
+            của chúng tôi
           </h2>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
             Chúng tôi xây dựng một môi trường an toàn và đáng tin cậy để mọi người có thể
-            quản lý nội dung một cách tự tin và bảo mật.
+            chia sẻ trải nghiệm du lịch một cách tự tin và bảo mật.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-blue-50 rounded-2xl p-8 flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Ngăn chặn truy cập trái phép</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Bảo vệ thông tin cá nhân</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Chúng tôi có các biện pháp bảo vệ để ngăn chặn truy cập trái phép, thay đổi nội dung không được phép và các hoạt động đáng ngờ trong hệ thống CMS.
+                  Chúng tôi có các biện pháp bảo vệ để ngăn chặn truy cập trái phép, bảo vệ vị trí cá nhân và các thông tin nhạy cảm khác.
                 </p>
               </div>
               <a href="#" className="text-blue-600 underline hover:text-blue-700 transition-colors cursor-pointer">
@@ -122,9 +122,9 @@ export default function PrivacyClient() {
 
             <div className="bg-gray-50 rounded-2xl p-8 flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Cung cấp quyền kiểm soát hoàn toàn</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Kiểm soát quyền riêng tư</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Bạn có toàn quyền kiểm soát nội dung, ai có thể truy cập và chỉnh sửa, cũng như cách quản lý workflow trong hệ thống CMS.
+                  Bạn có toàn quyền kiểm soát thông tin chia sẻ, ai có thể xem và tương tác với nội dung của bạn.
                 </p>
               </div>
               <a href="#" className="text-blue-600 underline hover:text-blue-700 transition-colors cursor-pointer">
@@ -134,9 +134,9 @@ export default function PrivacyClient() {
 
             <div className="bg-blue-50 rounded-2xl p-8 flex flex-col justify-between">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Hỗ trợ chuyên nghiệp</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Hỗ trợ cộng đồng</h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Chúng tôi có đội ngũ hỗ trợ chuyên nghiệp để xem xét và xử lý các vấn đề bảo mật. Chúng tôi tuân thủ <a href="#" className="text-blue-600 underline hover:text-blue-700 transition-colors cursor-pointer">Tiêu chuẩn bảo mật</a> của mình và luôn sẵn sàng hỗ trợ bạn khi cần thiết.
+                  Chúng tôi có đội ngũ hỗ trợ chuyên nghiệp để xem xét và xử lý các vấn đề bảo mật. Chúng tôi tuân thủ <a href="#" className="text-blue-600 underline hover:text-blue-700 transition-colors cursor-pointer">Chính sách bảo mật</a> và luôn sẵn sàng hỗ trợ bạn khi cần thiết.
                 </p>
                 <a href="#" className="text-blue-600 underline hover:text-blue-700 transition-colors cursor-pointer">
                   Tìm hiểu thêm
@@ -173,16 +173,16 @@ export default function PrivacyClient() {
                       />
                     </div>
                     <div>
-                      <div className="font-medium">Content Manager</div>
-                      <div className="text-sm text-gray-500">Đang làm việc trên dự án CMS</div>
+                      <div className="font-medium">Travel Enthusiast</div>
+                      <div className="text-sm text-gray-500">Đang chia sẻ chuyến đi</div>
                     </div>
                   </div>
                   <div className="space-y-3">
                     <div className="bg-blue-600 text-white p-3 rounded-2xl rounded-br-md ml-auto max-w-xs">
-                      Bạn có thể review bản draft mới của tôi không?
+                      Bạn có muốn tham gia chuyến đi Phú Quốc không?
                     </div>
                     <div className="bg-gray-100 p-3 rounded-2xl rounded-bl-md max-w-xs">
-                      Chắc chắn! Tôi sẽ kiểm tra ngay 😊
+                      Tuyệt vời! Tôi rất muốn tham gia 😊
                     </div>
                   </div>
                 </div>
@@ -190,13 +190,13 @@ export default function PrivacyClient() {
             </div>
             <div className="lg:w-1/2">
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Cộng tác dễ dàng với
+                Kết nối dễ dàng với
                 <br />
-                <span className="text-blue-600">đội ngũ quản lý nội dung</span>
+                <span className="text-blue-600">cộng đồng du lịch</span>
               </h3>
               <p className="text-gray-600 mb-6">
-                Làm việc cùng nhau với đội ngũ, chia sẻ tài nguyên và quản lý workflow
-                một cách hiệu quả và an toàn.
+                Kết nối với những người yêu thích du lịch, chia sẻ kinh nghiệm và tìm bạn đồng hành
+                một cách an toàn và hiệu quả.
               </p>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function PrivacyClient() {
                 )}
                 <Image
                   src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Secure content management"
+                  alt="Safe travel sharing"
                   width={1170}
                   height={400}
                   className={`w-full h-80 object-cover rounded-2xl shadow-lg transition-opacity duration-300 ${
@@ -223,13 +223,13 @@ export default function PrivacyClient() {
             </div>
             <div className="lg:w-1/2">
               <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
-                <span className="text-blue-600">Quản lý nội dung</span> an toàn
+                <span className="text-blue-600">Chia sẻ trải nghiệm</span> an toàn
                 <br />
                 và bảo mật
               </h3>
               <p className="text-gray-600 mb-6">
-                Quản lý và chia sẻ nội dung một cách an toàn với các tính năng bảo mật
-                tiên tiến và kiểm soát quyền truy cập chặt chẽ.
+                Chia sẻ những khoảnh khắc du lịch một cách an toàn với các tính năng bảo mật
+                tiên tiến và kiểm soát quyền riêng tư chặt chẽ.
               </p>
             </div>
           </div>
@@ -242,11 +242,11 @@ export default function PrivacyClient() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
             Kiểm soát <span className="text-blue-600">hoàn toàn</span>
             <br />
-            <span className="text-blue-600">quyền truy cập</span> nội dung
+            <span className="text-blue-600">quyền riêng tư</span> của bạn
           </h2>
           <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            Bạn có toàn quyền kiểm soát ai có thể truy cập và chỉnh sửa nội dung.
-            Thiết lập quyền hạn, workflow và mức độ bảo mật phù hợp với tổ chức.
+            Bạn có toàn quyền kiểm soát ai có thể xem và tương tác với nội dung của bạn.
+            Thiết lập mức độ riêng tư phù hợp với nhu cầu cá nhân.
           </p>
 
           <div className="relative w-full">
@@ -255,7 +255,7 @@ export default function PrivacyClient() {
             )}
             <Image
               src="https://images.unsplash.com/photo-1646337005884-20d2c95fa786?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Content access control"
+              alt="Privacy control for travelers"
               width={1170}
               height={400}
               className={`w-full h-96 object-cover rounded-2xl shadow-lg transition-opacity duration-300 ${
@@ -276,22 +276,22 @@ export default function PrivacyClient() {
           </h2>
 
           <p className="text-gray-600 mb-8">
-            Chúng tôi tin rằng bảo mật dữ liệu là nền tảng của mọi hệ thống CMS.
-            Vì vậy, chúng tôi đã xây dựng CMS với các công cụ bảo mật mạnh mẽ
-            để bảo vệ thông tin và nội dung của bạn.
+            Chúng tôi tin rằng bảo mật thông tin cá nhân là nền tảng của mọi mạng xã hội du lịch.
+            Vì vậy, chúng tôi đã xây dựng nền tảng với các công cụ bảo mật mạnh mẽ
+            để bảo vệ thông tin và trải nghiệm du lịch của bạn.
           </p>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="h-[300px] flex flex-col justify-center">
               <div className="grid grid-cols-2 gap-4 ">
                 <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <Icon icon="fluent:shield-24-regular" className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Mã hóa dữ liệu</h4>
-                  <p className="text-sm text-gray-600">Nội dung được bảo vệ an toàn</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Mã hóa thông tin</h4>
+                  <p className="text-sm text-gray-600">Thông tin cá nhân được bảo vệ an toàn</p>
                 </div>
                 <div className="bg-white rounded-xl p-6 shadow-md text-center">
                   <Icon icon="fluent:lock-24-regular" className="w-8 h-8 text-blue-600 mx-auto mb-3" />
-                  <h4 className="font-semibold text-gray-900 mb-2">Kiểm soát truy cập</h4>
-                  <p className="text-sm text-gray-600">Bạn quyết định ai có thể truy cập</p>
+                  <h4 className="font-semibold text-gray-900 mb-2">Kiểm soát riêng tư</h4>
+                  <p className="text-sm text-gray-600">Bạn quyết định ai có thể xem</p>
                 </div>
               </div>
             </div>
@@ -302,13 +302,13 @@ export default function PrivacyClient() {
                   <Icon icon="fluent:shield-checkmark-24-regular" className="w-6 h-6 text-green-500" />
                   <span className="text-sm font-medium text-green-600">Được bảo vệ</span>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Nội dung của bạn</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">Trải nghiệm của bạn</h4>
                 <p className="text-sm text-gray-600 mb-4">
-                  Tất cả nội dung được bảo mật và chỉ những người được ủy quyền mới có thể truy cập.
+                  Tất cả thông tin và trải nghiệm được bảo mật và chỉ những người được ủy quyền mới có thể xem.
                 </p>
                 <div className="flex items-center gap-2">
                   <Icon icon="fluent:heart-24-regular" className="w-4 h-4 text-red-500" />
-                  <span className="text-xs text-gray-500">Được tin tưởng bởi hàng ngàn tổ chức</span>
+                  <span className="text-xs text-gray-500">Được tin tưởng bởi hàng triệu du khách</span>
                 </div>
               </div>
             </div>
@@ -322,7 +322,7 @@ export default function PrivacyClient() {
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
             Cam kết bảo vệ
             <br />
-            hệ thống quản lý nội dung
+            cộng đồng du lịch
             <br />
             của chúng tôi
           </h2>
@@ -335,7 +335,7 @@ export default function PrivacyClient() {
                 )}
                 <Image
                   src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Team working on CMS security"
+                  alt="Team working on travel platform security"
                   width={1170}
                   height={400}
                   className={`w-full h-80 object-cover rounded-2xl shadow-lg transition-opacity duration-300 ${
@@ -348,14 +348,14 @@ export default function PrivacyClient() {
             </div>
             <div className="lg:w-1/2 text-left">
               <p className="text-gray-600 mb-6">
-                Chúng tôi cam kết xây dựng một hệ thống CMS an toàn và đáng tin cậy.
+                Chúng tôi cam kết xây dựng một cộng đồng du lịch an toàn và đáng tin cậy.
                 Với đội ngũ phát triển chuyên nghiệp, chúng tôi không ngừng
-                cải tiến để mang đến trải nghiệm quản lý nội dung tốt nhất.
+                cải tiến để mang đến trải nghiệm chia sẻ du lịch tốt nhất.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
-                  <span className="text-gray-700">Bảo mật đa lớp cho CMS</span>
+                  <span className="text-gray-700">Bảo mật đa lớp cho du khách</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
@@ -375,24 +375,24 @@ export default function PrivacyClient() {
       <section className="py-8 sm:py-12 lg:py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-12 sm:mb-16">
-            Công nghệ được sử dụng
+            Công nghệ bảo mật tiên tiến
           </h2>
 
           <div className="bg-blue-50 rounded-3xl p-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">Bảo mật tiên tiến</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Bảo mật thông tin cá nhân</h3>
                 <p className="text-gray-600 text-sm">
-                  Sử dụng các công nghệ bảo mật mới nhất để đảm bảo an toàn cho hệ thống CMS
+                  Sử dụng các công nghệ bảo mật mới nhất để đảm bảo an toàn cho thông tin du khách
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                    <span>Mã hóa dữ liệu người dùng</span>
+                    <span>Mã hóa thông tin cá nhân</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                    <span>Bảo vệ thông tin tổ chức</span>
+                    <span>Bảo vệ vị trí và hành trình</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
@@ -401,14 +401,14 @@ export default function PrivacyClient() {
                 </ul>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-gray-900">Trải nghiệm mượt mà</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Trải nghiệm du lịch mượt mà</h3>
                 <p className="text-gray-600 text-sm">
-                  Tối ưu hóa để mang lại trải nghiệm quản lý nội dung mượt mà và hiệu quả
+                  Tối ưu hóa để mang lại trải nghiệm chia sẻ du lịch mượt mà và thú vị
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
-                    <span>Tạo nội dung tức thì</span>
+                    <span>Chia sẻ khoảnh khắc tức thì</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full"></div>
@@ -429,7 +429,7 @@ export default function PrivacyClient() {
       <section className="py-8 sm:py-12 lg:py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-12 sm:mb-16">
-            Bắt đầu sử dụng CMS<br />
+            Tham gia cộng đồng du lịch<br />
             ngay hôm nay
           </h2>
 
@@ -438,7 +438,7 @@ export default function PrivacyClient() {
               <Icon icon="fluent:document-24-regular" className="w-6 h-6" />
               <div className="text-left">
                 <div className="text-xs">Bắt đầu</div>
-                <div className="font-medium text-sm">Tạo dự án</div>
+                <div className="font-medium text-sm">Tạo tài khoản</div>
               </div>
             </button>
 
@@ -446,7 +446,7 @@ export default function PrivacyClient() {
               <Icon icon="fluent:desktop-24-regular" className="w-6 h-6" />
               <div className="text-left">
                 <div className="text-xs">Tải về</div>
-                <div className="font-medium text-sm">Desktop App</div>
+                <div className="font-medium text-sm">Mobile App</div>
               </div>
             </button>
 
@@ -454,7 +454,7 @@ export default function PrivacyClient() {
               <Icon icon="fluent:globe-24-regular" className="w-6 h-6" />
               <div className="text-left">
                 <div className="text-xs">Truy cập</div>
-                <div className="font-medium text-sm">Web Dashboard</div>
+                <div className="font-medium text-sm">Web Platform</div>
               </div>
             </button>
           </div>

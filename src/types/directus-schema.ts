@@ -12,6 +12,27 @@ export interface Globals {
 	description?: string | null;
 }
 
+export interface Section {
+	/** @primaryKey */
+	id: number;
+	status?: 'published' | 'draft' | 'archived';
+	sort?: number | null;
+	user_created?: DirectusUser | string | null;
+	date_created?: string | null;
+	user_updated?: DirectusUser | string | null;
+	date_updated?: string | null;
+	title?: string | null;
+	subtitle?: string | null;
+	description?: string | null;
+	content?: string | null;
+	section_type?: string | null;
+	order?: string | null;
+	/** @required */
+	is_active: boolean;
+	page?: string | null;
+	image?: string | null;
+}
+
 export interface DirectusAccess {
 	/** @primaryKey */
 	id: string;
@@ -447,6 +468,7 @@ export interface DirectusExtension {
 
 export interface Schema {
 	globals: Globals;
+	sections: Section[];
 	directus_access: DirectusAccess[];
 	directus_activity: DirectusActivity[];
 	directus_collections: DirectusCollection[];
@@ -478,6 +500,7 @@ export interface Schema {
 
 export enum CollectionNames {
 	globals = 'globals',
+	sections = 'sections',
 	directus_access = 'directus_access',
 	directus_activity = 'directus_activity',
 	directus_collections = 'directus_collections',
