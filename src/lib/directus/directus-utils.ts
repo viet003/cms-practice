@@ -7,8 +7,8 @@ export function getDirectusAssetURL(fileOrString: string | DirectusFile | null |
 	const tokenParam = directusToken ? `?access_token=${directusToken}` : '';
 
 	if (typeof fileOrString === 'string') {
-		return `${process.env.NEXT_PUBLIC_DIRECTUS_URL}/assets/${fileOrString}${tokenParam}`;
+		return `${process.env.NEXT_PUBLIC_DIRECTUS_URL}/assets/${fileOrString}`;
 	}
 
-	return `${process.env.NEXT_PUBLIC_DIRECTUS_URL}/assets/${fileOrString.id}${tokenParam}`;
+	return `${process.env.NEXT_PUBLIC_DIRECTUS_URL}/assets/${fileOrString.id}`;
 }

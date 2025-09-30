@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Section } from '../../types/directus-schema';
+import { getDirectusAssetURL } from '@/lib/directus/directus-utils';
 
 const SkeletonImage = ({ className }: { className?: string }) => (
   <div className={`bg-gray-200 animate-pulse rounded-2xl ${className}`}></div>
@@ -139,10 +140,11 @@ export default function SectionRenderer({ section, index }: SectionRendererProps
                   <SkeletonImage className="w-full h-64 sm:h-80 md:h-96 lg:h-[400px] absolute inset-0" />
                 )}
                 <Image
-                  src={section.image}
+                  src={getDirectusAssetURL(section.image)}
                   alt={`${section.section_type} - ${section.title || 'Section'}`}
                   width={600}
                   height={400}
+                  unoptimized={true}
                   className={`w-full h-auto rounded-2xl transition-opacity duration-300 ${
                     imageLoading ? 'opacity-0' : 'opacity-100'
                   }`}

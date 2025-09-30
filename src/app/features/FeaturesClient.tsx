@@ -1,4 +1,4 @@
-import SectionRenderer from '../../components/sections/SectionRenderer';
+import SectionRenderer from '../../components/sections/SectionUI';
 import { Section } from '../../types/directus-schema';
 
 interface FeaturesClientProps {

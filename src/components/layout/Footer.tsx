@@ -2,7 +2,6 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { subLogo } from '../../assets/images';
 import { path } from '../../utilities/path';
 import { getDirectusAssetURL } from '../../lib/directus/directus-utils';
 import { DirectusFile } from '../../types/directus-schema';
@@ -39,10 +38,11 @@ const Footer: React.FC<FooterProps> = ({ subLogo: footerSubLogo, siteTitle }) =>
           </div>
           <div className="flex items-center space-x-2 text-gray-400 order-1 lg:order-3">
             <Image
-              src={footerSubLogo ? getDirectusAssetURL(footerSubLogo) : subLogo}
+              src={getDirectusAssetURL(footerSubLogo)}
               alt={`${siteTitle || "Travel Social"} Sub Logo`}
               width={200}
               height={50}
+              unoptimized={true}
               className="w-[200px] object-contain"
             />
           </div>

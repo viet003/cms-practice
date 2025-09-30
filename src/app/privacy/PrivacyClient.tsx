@@ -51,6 +51,7 @@ export default function PrivacyClient() {
                 alt="Travelers sharing experiences safely"
                 width={1170}
                 height={400}
+                unoptimized={true}
                 className={`w-full h-80 object-cover rounded-2xl mx-auto shadow-lg transition-opacity duration-300 ${
                   imageLoading.hero ? 'opacity-0' : 'opacity-100'
                 }`}
@@ -165,6 +166,7 @@ export default function PrivacyClient() {
                         alt="Content Manager"
                         width={40}
                         height={40}
+                        unoptimized={true}
                         className={`w-10 h-10 rounded-full object-cover transition-opacity duration-300 ${
                           imageLoading.chatAvatar ? 'opacity-0' : 'opacity-100'
                         }`}
@@ -213,6 +215,7 @@ export default function PrivacyClient() {
                   alt="Safe travel sharing"
                   width={1170}
                   height={400}
+                  unoptimized={true}
                   className={`w-full h-80 object-cover rounded-2xl shadow-lg transition-opacity duration-300 ${
                     imageLoading.locationShare ? 'opacity-0' : 'opacity-100'
                   }`}
@@ -258,6 +261,7 @@ export default function PrivacyClient() {
               alt="Privacy control for travelers"
               width={1170}
               height={400}
+              unoptimized={true}
               className={`w-full h-96 object-cover rounded-2xl shadow-lg transition-opacity duration-300 ${
                 imageLoading.contentControl ? 'opacity-0' : 'opacity-100'
               }`}
@@ -338,6 +342,7 @@ export default function PrivacyClient() {
                   alt="Team working on travel platform security"
                   width={1170}
                   height={400}
+                  unoptimized={true}
                   className={`w-full h-80 object-cover rounded-2xl shadow-lg transition-opacity duration-300 ${
                     imageLoading.trust ? 'opacity-0' : 'opacity-100'
                   }`}

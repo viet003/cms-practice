@@ -5,11 +5,11 @@ export interface Globals {
 	date_created?: string | null;
 	user_updated?: DirectusUser | string | null;
 	date_updated?: string | null;
+	title?: string | null;
+	description?: string | null;
 	logo?: DirectusFile | string | null;
 	sub_logo?: DirectusFile | string | null;
 	favicon?: DirectusFile | string | null;
-	title?: string | null;
-	description?: string | null;
 }
 
 export interface Section {
@@ -17,9 +17,7 @@ export interface Section {
 	id: number;
 	status?: 'published' | 'draft' | 'archived';
 	sort?: number | null;
-	user_created?: DirectusUser | string | null;
 	date_created?: string | null;
-	user_updated?: DirectusUser | string | null;
 	date_updated?: string | null;
 	title?: string | null;
 	subtitle?: string | null;
@@ -27,10 +25,9 @@ export interface Section {
 	content?: string | null;
 	section_type?: string | null;
 	order?: string | null;
-	/** @required */
-	is_active: boolean;
+	is_active?: boolean | null;
 	page?: string | null;
-	image?: string | null;
+	image?: DirectusFile | string | null;
 }
 
 export interface DirectusAccess {

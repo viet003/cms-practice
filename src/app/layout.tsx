@@ -20,12 +20,12 @@ export async function generateMetadata(): Promise<Metadata> {
     const globals = await fetchGlobals();
     
     return {
-      title: (globals.title as string) || "Travel Social - Mạng Xã Hội Du Lịch Toàn Cầu",
-      description: (globals.description as string) || "Khám phá những điểm đến tuyệt vời, chia sẻ trải nghiệm du lịch và kết nối với cộng đồng những người yêu thích du lịch trên toàn thế giới.",
-      icons: globals.favicon ? {
-        icon: getDirectusAssetURL(globals.favicon) as string,
-        shortcut: getDirectusAssetURL(globals.favicon) as string,
-        apple: getDirectusAssetURL(globals.favicon) as string,
+      title: (globals?.title as string),
+      description: (globals?.description as string),
+      icons: globals?.favicon ? {
+        icon: getDirectusAssetURL(globals?.favicon) as string,
+        shortcut: getDirectusAssetURL(globals?.favicon) as string,
+        apple: getDirectusAssetURL(globals?.favicon) as string,
       } : undefined,
     };
   } catch (error) {
