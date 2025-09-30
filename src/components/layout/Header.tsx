@@ -11,8 +11,29 @@ interface HeaderProps {
   isScrolled?: boolean;
 }
 
-const Header: React.FC<HeaderProps> = ({ isScrolled = false }) => {
+const Header: React.FC<HeaderProps> = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== 'undefined') {
+        setIsScrolled(window.scrollY > 50);
+      }
+    };
+    
+    // Initial check
+    handleScroll();
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Disable scroll when mobile menu is open
   useEffect(() => {
@@ -31,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ isScrolled = false }) => {
   return (
     <>
       {/* Header */}
-      <header className={`fixed top-0 left-0 right-0 z-[60] w-full ${isScrolled
+      <header className={`fixed top-0 left-0 right-0 z-[60] w-full ${isMounted && isScrolled
         ? 'backdrop-blur-lg bg-white/95 border-b border-gray-200'
         : 'bg-transparent'
         }`}>

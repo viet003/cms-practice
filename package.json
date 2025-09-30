@@ -6,11 +6,17 @@
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "generate:types": "tsx ./src/lib/directus/generateDirectusTypes.ts"
   },
   "dependencies": {
+    "@directus/sdk": "^19.1.0",
+    "@directus/visual-editing": "^1.1.0",
     "@iconify/react": "^6.0.2",
+    "directus-sdk-typegen": "^0.2.1",
+    "dotenv": "^17.2.2",
     "next": "15.5.4",
+    "p-queue": "^8.1.1",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
@@ -23,6 +29,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
     "tailwindcss": "^4",
+    "tsx": "^4.20.6",
     "typescript": "^5"
   }
 }
